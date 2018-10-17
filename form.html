@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TOKO ONLINE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="cssku2.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="cssku.css">
+    <style>
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #af0e25;
+            padding: 25px;
+        }
+
+        .carousel-inner img {
+            width: 100%; /* Set width to 100% */
+            min-height: 200px;
+        }
+
+        /* Hide the carousel text when the screen is less than 600 pixels wide */
+        @media (max-width: 600px) {
+            .carousel-caption {
+                display: none;
+            }
+        }
+        .navbar {
+            background-color: #af0e25;
+        }
+    </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Toko Online</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="new.html">New</a></li>
+                <li ><a href="populer.html">Populer</a></li>
+                <li ><a href="diskon.html">Diskon</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="tabel.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container ">
+    <h2>Form Koprasi Online /Order Online</h2>
+    <p style="color: #ff6154"> ** Hanya mealayani daerah jember Dan sekitarnya</p>
+
+        <form action="/action_page.php" >
+            <div class="column3" style="background: white">
+                <div class="row">
+                    <div class="col-100">
+                        <label for="fname">Nama</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Nama" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-100">
+                        <label for="lname">Nama Lengkap</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Nama lengkap">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-100">
+                        <label for="kabupataen">Kabupaten</label>
+                        <select id="kabupataen" name="kabupaten" required>
+                            <option value="australia">Jember</option>
+                            <option value="canada">Situbodo</option>
+                            <option value="canada">Bondowoso</option>
+                            <option value="usa">Banyuwangi</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-100">
+                        <label for="lname">Alamat Lengkap</label>
+                        <input type="text" id="lengkap" name="lastname" placeholder="Alamat" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-100">
+                        <label for="tlp">No. Tlp</label>
+                        <input type="number" id="tlp" name="lastname" placeholder="No. tepopon" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-100">
+                        <label for="bang">Pilih bank</label>
+                        <select id="bang" name="country" required>
+                            <option value="australia">BRI</option>
+                            <option value="canada">BCA</option>
+                            <option value="usa">BNI</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-100">
+                        <label for="tipe">Pilih pembayaran</label>
+                        <select id="tipe" name="country" required>
+                            <option value="australia">Credit Card</option>
+                            <option value="canada">ATM</option>
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="column1">
+                <label for="lname"><h1>RINNAI</h1><h2> Kompor Gas RI-301S - 1 Tungku garansi resmi</h2></label>
+                <div class="column2">
+                    <div class="row">
+                        <div class="col-50">
+                            <img src="kopor.jpg">
+                            <h2><p style="color: #ff6154"> Rp 148.000 / Buah</p></h2>
+                            <h4>Rp 265.000 -44%</h4>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="column2">
+                    <div class="row">
+                        <div class="col-100">
+                            <h4>
+                                Maspion EX802 – Kompor Gas Portable
+                                Brand : Maspion
+                                Product SKU : EX802
+                            </h4>
+                            <p style="text-align: justify">Maspion EX-802 - Kompor Gas Portable memiliki body yang terbuat dari stainless steel menjadikan kompor mudah dibersihkan setelah digunakan.
+                                Sehingga makanan yang dihasilkan nantinya juga lebih higienis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-100">
+                            <label for="lname">Kuantitas</label>
+                            <input type="number"  value="1" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-100">
+                            <label for="tipe">Pengiriman</label><br>
+                            <input type="radio" name="gender" value="female" checked> JNE/Pot <br>
+                            <input type="radio" name="gender" value="male" > Go-Jek<br>
+                            <input type="radio" name="gender" value="other"> Jemput
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="row" style="text-align: right; padding-right: 3% ">
+                <div class="col-90">
+                    <p><input type="checkbox" name="vehicle2" value="Car" required>  Saya yakin dengan alamat dan barang ini !</p>
+                </div>
+            </div>
+
+            <div class="row" style="text-align: right; padding-right: 3%; padding-bottom: 5%" >
+
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+
+
+</div>
+</body>
+</html>
